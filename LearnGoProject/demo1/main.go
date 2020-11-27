@@ -89,7 +89,12 @@ func main() {
 	fmt.Printf("str7 `反斜包含的多行串`%v\n", str7)
 
 	if2 := 23
-	fmt.Printf("%v", if2)
+	fmt.Printf("%v\n", if2)
+
+	var ptr1 *int  //赋值后才能指向的地址
+	fmt.Printf("ptr1:%v, ptr1:%p\n", ptr1, ptr1)
+	ptr1 = &num5
+	fmt.Printf("ptr1:%v, ptr1:%p\n", ptr1, ptr1)
 }
 
 func parseCents(s string) (float64, error) {

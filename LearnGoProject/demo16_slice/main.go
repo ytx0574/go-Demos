@@ -82,4 +82,95 @@ func main() {
 	fmt.Printf("slice7[01]地址:%p, slice5[01]地址:%p\n", &slice7[01], &slice5[01])
 
 	//fmt.Printf("slice6 = %v %T\n", slice9, slice9)
+
+	//修改字符串内容  因为string是值类型, 所以转为byte切片, 再进行修改 也可以用到前面使用到的string包里面的函数操作字符串
+	str := "zhe shi yi zhi zhu!"
+	fmt.Printf("%c, %T\n", str[3], str[3])
+	slice8 := []byte(str) // str转byte数组
+	slice8[0] = 'Z'
+	str1 := string(slice8)
+	str2 := str[:]  //str切片, 返回值还是string
+	fmt.Printf("slice8 = %v\nstr1 = %v\nstr2 = %v\n", slice8, str1, str2)
+	fmt.Printf("slice8 type:%T, str2 type:%T\n", slice8, str2)
+
+	//int32 == rune  3个字节, 可表示中文
+	str3 := string([]int32{1, 2, 3, 33333, 44334, 22333})
+
+	//常规的char. byte == uint8. 表示单个字符
+	str4 := string([]uint8{100, 77, 180})
+	fmt.Printf("str3 = %v str4 = %v\n", str3, str4)
+
+	//使用切片获取斐波那契数列
+	slice9 := fbn(11)
+	fmt.Printf("斐波那契数列为: %v\n", slice9)
+
+	slice10 := append([]string{}, "11")
+	fmt.Printf("slice10:%v\n", slice10)
+	var slice11 []string
+
+	slice12 := append(slice11, "123")
+	fmt.Printf("slice12:%v\n", slice12)
+
+	//切片在未初始化时, 它的值是nil. 初始化后才地址  此处使用%v, 两次打印都是空数组, 看不出区别
+	fmt.Printf("slice11:%v slice11地址:%p slice11的值的地址:%p\n", slice11, &slice11, slice11)
+	//slice11 = []string{"11"}
+	slice11 = make([]string, 0)
+	fmt.Printf("slice11:%v slice11地址:%p slice11的值的地址:%p\n", slice11, &slice11, slice11)
+
+
+	str5 := "abc 1"
+	str6 := "abc 1c"
+	str7 := "abc 1我"
+
+	str5_bytes := []byte(str5)
+	str6_bytes := []byte(str6)
+	str7_bytes := []uint8(str7)
+	str7_bytes2 := []int32(str7)
+
+	//关于字符在二进制的编码显示  参考链接:https://www.cnblogs.com/yaowen/p/10572455.html
+	//[1100001 1100010 1100011 100000 110001]
+	//[1100001 1100010 1100011 100000 110001 1100011]                       1100011 = 99 = c
+	//[1100001 1100010 1100011 100000 110001 11100110 10001000 10010001]    后面的三个字符为 = 我
+	//										 111001101000100010010001       = 我 (二进制表示)
+	//										 1110xxxx 10xxxxxx 10xxxxxx     = UTF-8 标记中文3个字节的编码模板
+	//										 11100110 10001000 10010001     = 使用 我 的ASCII码110001000010001, 从右向左进行套用模板得到 我 的二进制表示
+	//										 0110 001000 010001             = 我 的ASCII码拆分
+	//[1100001 1100010 1100011 100000 110001 110001000010001]               110001000010001 = 0x6211 =  25105 = 我 (ASCII)
+
+	//UTF8编码模板如下
+	//
+	//1字节 0xxxxxxx
+	//2字节 110xxxxx 10xxxxxx
+	//3字节 1110xxxx 10xxxxxx 10xxxxxx
+	//4字节 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+	//5字节 111110xx 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx
+	//6字节 1111110x 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx
+
+	//此处内部已经规定好, 常规的字符用byte(uint8)表示 中文因为占3个字节, 所以用rune(int32)表示 其他的类型都不行
+	//带中文的字符串, 常规的字符还是用byte表示. 中文用3个字节表示
+	//int32表示字符串时, 汉字转为对应的unicode码
+	//
+	fmt.Printf("%q\n%q\n%q\n%q\n", str5_bytes, str6_bytes, str7_bytes, str7_bytes2)
+	fmt.Printf("%b\n%b\n%b\n%b\n", str5_bytes, str6_bytes, str7_bytes, str7_bytes2)
+
+	//11100101 10011011 10111101  国 byte 转二进制
+	//101011011111101   国 int32(ASCII码) 转二进制
+	//0101 011011 111101 使用下面模板套用, 生成二进制, 高位不足补0
+	//1110xxxx 10xxxxxx 10xxxxxx   UTF8中文模板
+	//11100101 10011011 10111101   套用上面的模板, 使用 国 的 ASCII生成的二进制套用 得到 国 的二进制表示
+	fmt.Printf("国 bytes binary:%b, 国 rune binary:%b\n", []byte("国"), []rune("国"))
+}
+
+func fbn (n int) []int {
+	slice := make([]int, n)
+	if n >= 1 {
+		slice[0] = 1
+	}
+	if n >= 2 {
+		slice[1] = 1
+	}
+	for i := 2; i < n; i++ {
+		slice[i] = slice[i - 1] + slice[i - 2]
+	}
+	return slice
 }

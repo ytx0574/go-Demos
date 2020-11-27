@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"strconv"
 	"strings"
 	"unicode"
@@ -84,4 +85,56 @@ func main() {
 
 	//strings.Reader 此类型不懂 后续再来学
 	fmt.Printf("%v\n", strings.NewReader("wosoojojofs"))
+
+	test_string()
+
+	//此处专门找了一下\r \n的区别.  参考链接:https://www.jianshu.com/p/23804b0b03c8
+	// \r 回车. 光标出现在行首. 意味着继续输入会覆盖本行之前的内容
+	// \n 换行. 直接另起一行显示
+	//在unix系统中行尾\n换行.  而windows中行尾变成了 \r\n. 所以我们会经常看到macos编辑的文本, 到了windows上面, 变成了一整行
+	//macos早期的版本 行尾是\r. (10.6以前)   后面的版本都是行尾都是\n
+	//在golang中, \r前面的字符都使用\r后面的字符覆盖(后面字符长度不足前面的, 前面后半部分会得到保留).  \r不带换行效果
+	//使用oc测试时, 发现oc对此的处理不一样. \r直接和\n的处理是一样的, 都是换行  \r\n会换一行
+	//要比较两者\r和\n, 只能判断其对应的ASCII码. 在golang下面能看到明显的区别.  在oc中只能通过打印看出
+	//golang的字符串输出和写入到文件肉眼可见的内容是不一样的.(参考下面的str5) golang自行处理的输出显示. 写入文件时, 操作系统也会处理对字符串的内容处理
+	fmt.Println("aaa\rbbb")
+	fmt.Println("aaa\nbbb")
+	fmt.Println("aaa\r\nbbb")
+	fmt.Println("aaa\n\rbbb")
+	fmt.Println("aaa\r1\nbbb")
+	fmt.Println("aaa\n1\rbbb")
+
+	str5 := "\r\raaa[\r\r]bbb\r\r"
+	str6 := "\n\naaa[\n\n]bbb\n\n"
+	str7 := "\r\raaa[\r\r]bbb\r\rsjoi333jo\rOOOO\r\r1111\r2222\r\r\r7"
+	fmt.Println(str7)
+
+
+	f, _ := os.Create("/Users/xxx/Desktop/go_aaaa1.txt")
+	f.Write([]byte(str5))
+	defer f.Close()
+
+	f2, _ := os.Create("/Users/xxx/Desktop/go_aaaa2.txt")
+	f2.Write([]byte(str6))
+	defer f2.Close()
+
+	fmt.Println("------")
+	//此处str5 = ]bbb\n
+	fmt.Printf("%q\n", str5)  //输出原值, "\r\raaa[\r\r]bbb\r\r"
+	fmt.Printf("%v\n", str5)  //输出格式化后的字符串 "]bbb "
+	fmt.Printf("str5 = %v\n", str5) //输出"]bbb = "  //因为最后的\r\r后面没有字符. 使用到前面的]bbb. 又因为"str5 = "比"]bbb"长, 所以最终输出 "]bbb = "
+	fmt.Println("------")
+}
+
+func test_string()  {
+	str1 := "2"
+	str2 := "2114"
+	fmt.Printf("str1地址:%p, str2地址:%p\n", &str1, &str2)
+
+	str1_bytes := []byte(str1)
+	fmt.Printf("%v\n", str1_bytes)
+
+	if str1 == str2 {
+		fmt.Printf("str1 == str2\n")
+	}
 }

@@ -80,9 +80,14 @@ func main() {
 			 //6 ^ 3 = 0110 ^ 0011 = 0101 = 5
 		 }
 	 }
-	fmt.Printf("%v\n", arrNum)
+	fmt.Printf("arrNum = %v\n", arrNum)
 
-	 a := 3
-	 b := 5
-	 fmt.Printf("%v  %v\n", a | b, 8 | b)
+	arr6 := [][]int{{1}, {2}}
+	for _, value := range arr6 {
+		fmt.Printf("%v\n", value)
+	}
+
+	arr7 := [2][1][2]int{ {{1, 2}}, {{1, 2}}}  //三维数组
+	fmt.Printf("arr6 type:%T, arr7 type:%T\n", arr6, arr7)
+	fmt.Printf("arr7 %v\n", arr7)
 }
