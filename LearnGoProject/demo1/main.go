@@ -2,12 +2,21 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"strconv"
 	"strings"
 )
 /*
 基本数据类型及转换
 */
+
+type TestValue struct {
+	id int
+	name string
+}
+
+var mapTestValue map[int]*TestValue = make(map[int]*TestValue, 10)
+
 func main() {
 	fmt.Printf("hello world\n")
 
@@ -95,6 +104,27 @@ func main() {
 	fmt.Printf("ptr1:%v, ptr1:%p\n", ptr1, ptr1)
 	ptr1 = &num5
 	fmt.Printf("ptr1:%v, ptr1:%p\n", ptr1, ptr1)
+
+	slice := make([]TestValue, 10)
+	for i := 0; i < 10; i ++ {
+		slice[i] = TestValue{
+			id: i,
+			name: strconv.Itoa(i),
+		}
+	}
+
+	for i, v := range  slice {
+		//todo slice的遍历其他语言不一样. 这里遍历时, 内部逐步把下标和值赋值一份到i,v 所以i, v在内存属于共享状态
+		fmt.Printf("i=%v, id=%v, name=%v  %p = %p\n", i, v.id, v.name, &v, &i)
+		mapTestValue[v.id] = &v  //此处不可用
+
+		//var new_v = v
+		//mapTestValue[v.id] = &new_v
+	}
+
+	fmt.Println(mapTestValue)
+
+	fmt.Printf("%v %v\n", math.Pow(9, 10), math.Pow(10, 9))
 }
 
 func parseCents(s string) (float64, error) {
@@ -120,4 +150,21 @@ func parseCents(s string) (float64, error) {
 	}
 
 	return float64(d) + c, nil
+
+
+	////常量每一行都写itoa或只第一行写iota, 常量都是依次递增 常量得访问限制还是根据定义位置和首字母得大小写来控制
+	//const (
+	//	aaa = iota //0
+	//	bbb  //1
+	//	ccc, ddd = iota, iota // 2 2  在同一行, 值一样
+	//)
+	//fmt.Printf("aaa:%d, bbb:%d, ccc:%d\n", aaa, bbb, ccc)
+	//
+	////complex128 和 complex64  代表 64位和32位得复数
+	////复数由两个浮点数组成, 我们把形如z=a+bi（a,b均为实数）的数称为复数，其中a称为实部，b称为虚部，i称为虚数单位。
+	////当z的虚部等于零时，常称z为实数；当z的虚部不等于零时，实部等于零时，常称z为纯虚数。
+	////复数域是实数域的代数闭包，即任何复系数多项式在复数域中总有根。 复数是由意大利米兰学者卡当在十六世纪首次引入，经过达朗贝尔、棣莫弗、欧拉、高斯等人的工作，此概念逐渐为数学家所接受。
+	////复数运算法则: https://baike.baidu.com/item/%E5%A4%8D%E6%95%B0%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99/2568041?fr=aladdin
+	//complex := complex(1, 2)
+	//fmt.Printf("得到得复数:%f, 实部:%f, 虚部:%f\n", complex, real(complex), imag(complex))
 }

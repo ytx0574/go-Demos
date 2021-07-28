@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <link type="text/css" rel="stylesheet" href="/static/css/style.css">
+    <style type="text/css">
+        h1 {
+            text-align: center;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="header">
+    <img class="logo_img" alt="" src="/static/img/logo.gif">
+    <span class="wel_word">我的订单</span>
+    <div>
+        <span>欢迎<span class="um_span">{{.UserName}}</span>光临尚硅谷书城</span>
+        <a href="/getPageUserCartItems">购物车</a>
+        {{template "LoginOutAndBack"}}
+    </div>
+</div>
+
+
+<div id="main">
+    {{if .Orders}}
+
+    <table>
+        <tr>
+            <th>单号</th>
+            <th>日期</th>
+            <th>数量</th>
+            <th>金额</th>
+            <th>详情</th>
+            <th>发货</th>
+        </tr>
+        {{range .Orders}}
+            <tr>
+                <td>{{.Id}}</td>
+                <td>{{.CreateTime}}</td>
+                <td>{{.TotalCount}}</td>
+                <td>{{.TotalAmount}}</td>
+                <td><a href="/getOrderInfo?orderId={{.Id}}">查看详情</a></td>
+                <td class="state">
+
+                    {{if .IsSended}}
+                        <a href="/takeOrder?orderId={{.Id}}">确认收货</a>
+                    {{end}}
+
+                    {{if .IsCreate}}
+                        等待发货
+                    {{end}}
+
+                    {{if .IsCompleted}}
+                        交易完成
+                    {{end}}
+                </td>
+            </tr>
+        {{end}}
+    </table>
+</div>
+
+<div id="page_nav">
+    {{if .HasPrev}}
+        <a href="/getMyOrders">首页</a>
+        <a href="/getMyOrders?pageNo={{.PrevPageNo}}">上一页</a>
+    {{end}}
+
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+
+    当前是第{{.PageNo}}页 共{{.TotalPageNo}}页 {{.TotalRecord}}条数据
+
+    {{if .HasNext}}
+        <a href="/getMyOrders?pageNo={{.NextPageNo}}">下一页</a>
+        <a href="/getMyOrders?pageNo={{.TotalPageNo}}">末页</a>
+    {{end}}
+
+    到第<input value="{{.PageNo}}" name="pn" id="pn_input"/>页
+    <input type="button" value="确定" id="sub_page"/>
+    <script>
+        $("#sub_page").click(function () {
+            var pageNo = parseInt($("#pn_input").val())
+            // var totalPage = parseInt($("#total_page").val())
+            var totalPage = parseInt($("{{.TotalPageNo}}").val())
+
+            if (pageNo < 1 || pageNo > totalPage) {
+                alert("输入不正确...")
+            } else {
+                location = "/getMyOrders?pageNo=" + pageNo
+            }
+        })
+    </script>
+    {{else}}
+        <h1>您的购物车饥渴难耐，快去<a href="/" style="color:red">购物</a>吧！</h1>
+    {{end}}
+</div>
+
+
+<div id="bottom">
+		<span>
+			尚硅谷书城.Copyright &copy;2015
+		</span>
+</div>
+</body>
+</html>

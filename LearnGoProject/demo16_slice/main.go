@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 //slice 数组的进阶, slice为引用类型
 func main() {
@@ -36,7 +38,7 @@ func main() {
 	slice3 := make([]int, 2, 3)
 	slice3[0] = 11
 	//slice3[1] = 12 //超过len. 无效
-	//slice3[2] = 13 //炒股len, 无效
+	//slice3[2] = 13 //炒股len, 无效[
 	//slice3[4] = 22 //
 	fmt.Printf("slice2 = %v, slice3 = %v\n", slice2, slice3)
 
@@ -46,6 +48,12 @@ func main() {
 	slice4 := []int{7, 8, 9}
 	fmt.Printf("slice3 = %v\n", slice4)
 
+	//slice取值 取值从左边的值的坐标开始, 到右边的值的坐标减一.
+	//比如下面的, 左右两者都可以为3. 不可超过数组长度, 否则运行时错误, 下标越界
+	//:左边的值不可小于右边, 否则编译失败
+	var slice = []int{1, 2, 3}
+	slice_new := slice[3:3] //  slice[3:3] = slice[3:] = slice[:3]
+	fmt.Println("slice_new = ", slice_new)
 
 	//切片遍历
 	for i := 0; i < len(slice4); i++ {
@@ -159,6 +167,69 @@ func main() {
 	//1110xxxx 10xxxxxx 10xxxxxx   UTF8中文模板
 	//11100101 10011011 10111101   套用上面的模板, 使用 国 的 ASCII生成的二进制套用 得到 国 的二进制表示
 	fmt.Printf("国 bytes binary:%b, 国 rune binary:%b\n", []byte("国"), []rune("国"))
+
+
+
+	fruit := make([]string, 5, 10)
+	fruit[0] = "11"
+	fruit[1] = "22"
+	fruit[2] = "33"
+	fruit[3] = "44"
+	fruit[4] = "55"
+	myFruit := fruit[1:3:8]  //第三个参数代表切片的容量. 此处容量为8-1= 7, 不可大于原始切片或数组的容量 (比如设置为11, 就会panic)
+	fmt.Printf("myFriut:  %v\n", myFruit)
+	fmt.Printf("myFruit len:%v, cap:%v\n", len(myFruit), cap(myFruit))
+
+
+	//todo 追加 直接append
+	myFruit = append(myFruit, "77")
+	fmt.Printf("myFruit len:%v, cap:%v\n", len(myFruit), cap(myFruit))
+
+	//todo 插入头部 直接append
+	myFruit = append([]string{"1", "2", "3"}, myFruit...)
+	fmt.Printf("头部插入: myFruit:  %v\n", myFruit)
+	fmt.Printf("myFruit len:%v, cap:%v\n", len(myFruit), cap(myFruit))
+
+	//todo 插入中间
+	var ii = "666"
+	var index = 1
+	myFruit = append(myFruit, "")
+	copy(myFruit[index + 1:], myFruit[index:])
+	myFruit[index] = ii
+	fmt.Printf("index:%v插入%v myFruit:  %v\n", index, ii, myFruit)
+	fmt.Printf("myFruit len:%v, cap:%v\n", len(myFruit), cap(myFruit))
+
+	//todo 插入切片
+	index = 5
+	var iiiSlice = []string{"777", "888"}
+	myFruit = append(myFruit, iiiSlice...)  //先扩展切片的容量个数
+	copy(myFruit[index + len(iiiSlice):], myFruit[index:]) //把index后面的数据移动到index+len(切片)的位置
+	//copy(myFruit[index : index + len(iiiSlice)], iiiSlice) //把插入的切片放入index的位置
+	copy(myFruit[index :], iiiSlice)
+	fmt.Printf("index:%v插入%v myFruit:  %v\n", index, iiiSlice, myFruit)
+	fmt.Printf("myFruit len:%v, cap:%v\n", len(myFruit), cap(myFruit))
+
+	//todo 删除元素  直接生成切片即可
+	//todo 删除中间元素
+	myFruit = append(myFruit[:index], myFruit[index + 2:]...)
+	fmt.Printf("index:%v删除两个元素 myFruit:  %v\n", index, myFruit)
+	fmt.Printf("myFruit len:%v, cap:%v\n", len(myFruit), cap(myFruit))
+
+	index = 1
+	//todo 删除index = 1, 后面的两个元素
+	//todo 使用copy把要删除的片段用后面的数据覆盖, 然后再切片抛弃最后的删除切片的长度
+	myFruit = myFruit[: index + copy(myFruit[index:], myFruit[index + 2:])]
+	fmt.Printf("index:%v删除两个元素 myFruit:  %v\n", index, myFruit)
+	fmt.Printf("myFruit len:%v, cap:%v\n", len(myFruit), cap(myFruit))
+
+
+	//todo 利用切片[:0]可以很轻易的实现make(xx, 0, 11)的效果
+	//todo 在已知长度的情况下, 避免对slice进行扩容, 可以使用[:0]来实现和原始数据容量一样的切片, 进而避免在处理过程中扩容
+	//todo 比如下面我要筛选出MyFruit小于33的数据, 那么新得到的切片肯定小于原始数据的切片
+	NewFruit := myFruit[:0]
+	fmt.Printf("len:%v, cap:%v\n", len(NewFruit), cap(NewFruit))
+	fmt.Printf("myFruit len:%v, cap:%v\n", len(myFruit), cap(myFruit))
+
 }
 
 func fbn (n int) []int {

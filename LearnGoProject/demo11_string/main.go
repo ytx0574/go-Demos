@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"os"
 	"strconv"
 	"strings"
@@ -124,6 +125,23 @@ func main() {
 	fmt.Printf("%v\n", str5)  //输出格式化后的字符串 "]bbb "
 	fmt.Printf("str5 = %v\n", str5) //输出"]bbb = "  //因为最后的\r\r后面没有字符. 使用到前面的]bbb. 又因为"str5 = "比"]bbb"长, 所以最终输出 "]bbb = "
 	fmt.Println("------")
+
+	//此处注意. string其实就是byte数组  所有这里可以直接拷贝一个string到byte数组中
+	var slice []byte = make([]byte, 5)
+	copy(slice, "我2")
+	fmt.Printf("slice = %v, slice = %b\n", slice, slice)
+
+	//使用反引号初始化一大段字符串.   内部严格遵守``的字符串格式. 自行在里面添加\n是无效的, 内部所有的符号都会原样输出
+	str8 := `
+用t保存全局的itabTable地址，然后使用t.find函数查找，这么做是为了防止在查找
+	过程中itabTable被替换导致错误
+	如果未找到，再尝试加锁查找。原因是第一步查找时可能有另一个协程并发写入，从而导致Find函数未找到但实际数据是
+	存在的。这时通过加锁防止itabTable被写入，然后在itabTable中查找
+	如果扔为找到，此时根据接口类型和数据类型生成一个新的itab插入itabTable中。如果插入失败，则panic 注意这里添加时，申请的内存大
+	小为len(inter.mhdr)-1，前面我们知道fun数组大小为1，所以这里再申请内存时只需再申请len(inter.mhdr)-1即可。`
+	fmt.Printf("str8 = %v\n", str8)
+
+	CompareTwoString()
 }
 
 func test_string()  {
@@ -137,4 +155,31 @@ func test_string()  {
 	if str1 == str2 {
 		fmt.Printf("str1 == str2\n")
 	}
+}
+
+func CompareTwoString () {
+
+	sep := "\n"
+	allBytes, err := ioutil.ReadFile("/Users/Johnson/Desktop/localize_All.txt")
+	nowBytes, err := ioutil.ReadFile("/Users/Johnson/Desktop/localize_Now.txt")
+	if err != nil {
+		fmt.Printf("read file err:%v\n", err)
+	}
+
+	slice := make([]string, 0)
+	nowSlice := strings.Split(string(nowBytes), sep)
+	nowMap := make(map[string]interface{})
+
+	for _, v := range nowSlice {
+		nowMap[v] = ""
+	}
+
+	for _, v := range strings.Split(string(allBytes), sep) {
+		if _, ok := nowMap[v]; ok == false {
+			slice = append(slice, v)
+		}
+	}
+
+	fmt.Println(slice)
+	ioutil.WriteFile("/Users/Johnson/Desktop/localize_Diff.txt", []byte(strings.Join(slice, "\n")), os.ModePerm)
 }

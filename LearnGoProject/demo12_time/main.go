@@ -53,10 +53,39 @@ func main() {
 	//时间字符串转time
 	layout := "2006-01-02 15:04:05.000"
 	str := "2014-11-12 11:45:26.371"
-	t, err := time.Parse(layout, str)
+	t, err := time.Parse(layout, str) //将时间解析为UTC时间
+	t1, err := time.ParseInLocation(layout, str, time.Local)
+
 
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println(t)
+	fmt.Println(t, t1)
+
+	fmt.Printf("系统预定义得格式化:%v\n", time.Now().Format(time.RubyDate))
+
+	//todo: win没有安装go环境, 则无法使用此法 time.LoadLocation
+	timeLocation, err := time.LoadLocation("America/Los_Angeles")
+	timeLocation = time.FixedZone("CST", 8 * 3600)
+	fmt.Printf("转换转换当前时间到指定时区:%v\n", time.Now().In(timeLocation))
+	//time.UTC  //零时区
+	//time.Local //本地时区
+
+	fmt.Println(now.Local(), now, now.UTC())
+
+	jsonByte, err := now.MarshalJSON()
+	textByte, err := now.MarshalText()
+	fmt.Printf("格式为json得时间:%v,格式化为text得时间:%v\n", string(jsonByte), string(textByte))
+
+	//创建一个timer  会在指定时间到期.  然后向C发送当时的时间
+	timer := time.NewTimer(time.Second * 2)
+	for {
+		select {
+		case v := <-timer.C:
+			fmt.Printf("%v\n", v)
+			return
+		default:
+			//fmt.Printf("sss\n")
+		}
+	}
 }

@@ -9,7 +9,7 @@ func init () {
 }
 
 func Print_string ()  {
-	fmt.Print("utils_demo9 utils 就是打印一句话\n")
+	fmt.Print("utils_demo9 demo1-mysql 就是打印一句话\n")
 }
 
 func print_string ()  {

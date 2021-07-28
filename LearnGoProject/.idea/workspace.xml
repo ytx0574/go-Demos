@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0ab00dc4-af31-4d15-b4a9-9a4c783f66fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/go-Demos.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo21_interface/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo21_interface/model/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo21_interface/model/model2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo21_interface/model/sort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo22_assertion/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo23_CustomerManager/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo23_CustomerManager/model/customer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo23_CustomerManager/view/customerView.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo23_CustomerManager/viewcontroller/customerViewController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo24_file/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo25_Pointer/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo26_CommandArgs/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo27_Sirial/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo27_Sirial/model/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo28_Test/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo28_Test/utils/utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo28_Test/utils/utils_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo29_routine_channel/demo1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo29_routine_channel/demo2_channel/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo29_routine_channel/demo2_channel/utils/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo29_routine_channel/demo2_channel/utils2/model2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo29_routine_channel/demo2_pubsub/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo29_routine_channel/demo2_pubsub/models/pubsub.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo29_routine_channel/demo3/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo29_routine_channel/demo4/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo29_routine_channel/demo5/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo29_routine_channel/demo6/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo29_routine_channel/demo7/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo29_routine_channel/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo30_reflect/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo30_reflect/model/Student.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo31_redis/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo31_redis/model/Student.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo31_redis/redis_hash.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo31_redis/redis_list.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo31_redis/redis_others.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo31_redis/redis_set.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo31_redis/redis_string.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo31_redis/redis_zset.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo32_http/Client/httpClient.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo32_http/Server/httpServer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo32_http/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo33_andlabsui/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo34_ETCD/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo35_DataStructure/binary_search_tree/binarySearchTree.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo35_DataStructure/linked_list/BankServiceQueue.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo35_DataStructure/linked_list/Node.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo35_DataStructure/linked_list/cycle_list/CycleList.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo35_DataStructure/linked_list/double_list/DoubleList.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo35_DataStructure/linked_list/josuphu/josuphu.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo35_DataStructure/linked_list/single_list/SingleList.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo35_DataStructure/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo35_DataStructure/queue/queue.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo35_DataStructure/sparse_matrix/SparseMarix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo36_algorithm/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo37_stack/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo38_HashTable/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo39_netrpc/client/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo39_netrpc/server/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo40_cgo/demo1/main/hello.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo40_cgo/demo1/main/hello.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo40_cgo/demo1/main/hello.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo40_cgo/demo1/main/hello.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo40_cgo/demo1/main/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo40_cgo/demo2/main/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo40_cgo/demo3/main/main" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo40_cgo/demo3/main/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo40_cgo/demo4_sharelibrary/main/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo40_cgo/demo4_sharelibrary/main/test.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo40_cgo/demo4_sharelibrary/main/test.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo1-mysql/dao/tgbot_dao.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo1-mysql/dao/tgbot_dao_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo1-mysql/dataUtils/user_utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo1-mysql/dataUtils/user_utils_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo1-mysql/main/Mysql高级.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo1-mysql/main/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo1-mysql/main/mysql高级2.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo1-mysql/main/mysql高级3.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo1-mysql/main/tg_group_info.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo1-mysql/model/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo1-mysql/utils/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo2-http/main/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo3-template/main/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo3-template/main/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/const/const.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/const/http_const.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/controller/book_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/controller/cart_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/controller/file_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/controller/order_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/controller/user_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/dao/book_utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/dao/book_utils_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/dao/cart_utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/dao/cart_utils_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/dao/order_utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/dao/order_utils_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/dao/session_utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/dao/sesstion_utils_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/dao/user_utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/dao/user_utils_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/model/book.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/model/cart.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/model/order.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/model/page.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/model/session.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/model/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages/cart/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages/cart/checkout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages/manager/book_edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages/manager/book_manager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages/manager/book_modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages/manager/manager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages/order/order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages/order/order_info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages/order/order_manager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages/user/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages/user/login_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages/user/regist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages/user/regist_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/static/img/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/static/img/logo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/static/script/jquery-1.7.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/utils/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/database.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo4_bookstore/mysql_func_demo.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo5_websocket/websocket.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo5_websocket/websocket.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo6_udp/client/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo41_web/demo6_udp/server/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LearnGoProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LearnGoProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo11_string/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo11_string/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo12_time/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo12_time/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo14_error/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo14_error/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo16_slice/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo16_slice/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo18_map/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo18_map/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo19_struct/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo19_struct/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo20_面向对象/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo20_面向对象/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo4_bitwise_operation/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo4_bitwise_operation/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6_package1/j_utils/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo6_package1/j_utils/utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo6_package1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo6_package1/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo8_func/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo8_func/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo9_package2/j_utils/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo9_package2/j_utils/utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo9_package2/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo9_package2/main.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1mMcX1uz9SOgcYi7CQIxJ187AHh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="database.data.extractors.current.id" value="JSON-Groovy.json.groovy" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo40_cgo" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo29_routine_channel/demo2_channel/utils2" />
+      <recent name="$PROJECT_DIR$/demo29_routine_channel/demo2_channel" />
+      <recent name="$PROJECT_DIR$/demo41_web/demo4_bookstore" />
+      <recent name="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go" />
+      <recent name="$PROJECT_DIR$/demo41_web/demo3-template" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo40_cgo" />
+      <recent name="$PROJECT_DIR$/demo41_web/demo1-mysql/main" />
+      <recent name="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages" />
+      <recent name="$PROJECT_DIR$/demo41_web/demo4_bookstore/bookstore_go/pages/manager" />
+      <recent name="$PROJECT_DIR$/demo41_web/demo4_bookstore" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build main.go (2)">
+    <configuration name="go build go-Demos/LearnGoProject/demo21_interface" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LearnGoProject" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/demo21_interface/main.go" />
+      <package value="go-Demos/LearnGoProject/demo21_interface" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LearnGoProject" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/demo40_cgo/demo3/main/main.go" />
+      <package value="go-Demos/LearnGoProject" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LearnGoProject" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/demo40_cgo/demo4_sharelibrary/main/main.go" />
+      <package value="go-Demos/LearnGoProject" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LearnGoProject" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/demo29_routine_channel/demo2_channel/main.go" />
+      <package value="go-Demos/LearnGoProject" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestTestLockRow in go-Demos/LearnGoProject/demo41_web/demo1-mysql/dataUtils" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="LearnGoProject" />
+      <working_directory value="$PROJECT_DIR$/demo41_web/demo1-mysql/dataUtils" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="go-Demos/LearnGoProject/demo41_web/demo1-mysql/dataUtils" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestTestLockRow$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Test.TestTestLockRow in go-Demos/LearnGoProject/demo41_web/demo1-mysql/dataUtils" />
+      <item itemvalue="Go Build.go build go-Demos/LearnGoProject/demo21_interface" />
+      <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="Go Build.go build main.go (1)" />
+      <item itemvalue="Go Build.go build main.go (2)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go (2)" />
+        <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build go-Demos/LearnGoProject/demo21_interface" />
+        <item itemvalue="Go Test.TestTestLockRow in go-Demos/LearnGoProject/demo41_web/demo1-mysql/dataUtils" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <environment>
+      <map>
+        <entry key="ETCDV3_SERVER_URLS" value="http://127.0.0.1:2379" />
+      </map>
+    </environment>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="741" y="548" key="#GOROOT" timestamp="1622803064434">
+      <screen x="0" y="23" width="1888" height="1177" />
+    </state>
+    <state x="741" y="548" key="#GOROOT/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1622803064434" />
+    <state x="597" y="103" width="841" height="985" key="#Notifications" timestamp="1625221076206">
+      <screen x="0" y="23" width="1885" height="1177" />
+    </state>
+    <state x="597" y="103" key="#Notifications/-1920.23.1920.1057/0.23.1885.1177@0.23.1885.1177" timestamp="1625221076206" />
+    <state x="598" y="103" key="#Notifications/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1617688084933" />
+    <state x="296" y="445" key="#SQL_Dialects" timestamp="1626766068160">
+      <screen x="0" y="23" width="1887" height="1177" />
+    </state>
+    <state x="296" y="445" key="#SQL_Dialects/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626766068160" />
+    <state x="391" y="131" key="#SSH_Configurations" timestamp="1624868649094">
+      <screen x="0" y="23" width="1888" height="1177" />
+    </state>
+    <state x="391" y="131" key="#SSH_Configurations/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1624868649094" />
+    <state x="627" y="257" key="#aaaaa" timestamp="1618470925787">
+      <screen x="0" y="23" width="1889" height="1177" />
+    </state>
+    <state x="627" y="257" key="#aaaaa/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618470925787" />
+    <state x="514" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1627373705171">
+      <screen x="0" y="23" width="1886" height="1177" />
+    </state>
+    <state x="406" y="144" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.23.1920.1057/0.23.1883.1177@0.23.1883.1177" timestamp="1624946314895" />
+    <state x="514" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.23.1920.1057/0.23.1886.1177@0.23.1886.1177" timestamp="1627373705171" />
+    <state x="407" y="144" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626777982482" />
+    <state x="407" y="144" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1624877329821" />
+    <state x="598" y="126" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618194702156" />
+    <state x="515" y="234" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.23.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1626923407561" />
+    <state x="614" y="119" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618475220569" />
+    <state x="674" y="421" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1627373311702">
+      <screen x="0" y="23" width="1886" height="1177" />
+    </state>
+    <state x="674" y="421" key="#com.intellij.fileTypes.FileTypeChooser/-1920.23.1920.1057/0.23.1886.1177@0.23.1886.1177" timestamp="1627373311702" />
+    <state x="675" y="420" key="#com.intellij.fileTypes.FileTypeChooser/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1617777867378" />
+    <state x="675" y="421" key="#com.intellij.fileTypes.FileTypeChooser/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618464852017" />
+    <state x="674" y="380" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1887.1057@0.23.1887.1057" timestamp="1618195861394" />
+    <state x="937" y="169" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1618475175169">
+      <screen x="0" y="23" width="1889" height="1177" />
+    </state>
+    <state x="937" y="169" key="#com.intellij.ide.macro.MacrosDialog/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618475175169" />
+    <state x="627" y="284" key="#database.sql" timestamp="1618472830990">
+      <screen x="0" y="23" width="1889" height="1177" />
+    </state>
+    <state x="627" y="284" key="#database.sql/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618036382554" />
+    <state x="627" y="284" key="#database.sql/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618472830990" />
+    <state x="627" y="257" key="#go_build_db.go" timestamp="1624867440890">
+      <screen x="0" y="23" width="1888" height="1177" />
+    </state>
+    <state x="627" y="257" key="#go_build_db.go/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1624867440890" />
+    <state x="627" y="258" key="#go_build_go-Demos/LearnGoProject/demo41_web/demo2/main" timestamp="1618192684714">
+      <screen x="0" y="23" width="1887" height="1177" />
+    </state>
+    <state x="627" y="258" key="#go_build_go-Demos/LearnGoProject/demo41_web/demo2/main/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1618192684714" />
+    <state x="627" y="258" key="#go_build_go-Demos/LearnGoProject/demo8_func" timestamp="1617781511976">
+      <screen x="0" y="23" width="1889" height="1177" />
+    </state>
+    <state x="627" y="258" key="#go_build_go-Demos/LearnGoProject/demo8_func/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1617781511976" />
+    <state x="627" y="257" key="#go_build_main.go_(2)" timestamp="1624086242836">
+      <screen x="0" y="23" width="1888" height="1177" />
+    </state>
+    <state x="627" y="257" key="#go_build_main.go_(2)/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1624086242836" />
+    <state x="626" y="284" key="#mysql高级2.sql" timestamp="1626767256089">
+      <screen x="0" y="23" width="1887" height="1177" />
+    </state>
+    <state x="626" y="284" key="#mysql高级2.sql/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626767256089" />
+    <state x="905" y="563" width="945" height="554" key="#xdebugger.evaluate" timestamp="1626852854139">
+      <screen x="0" y="23" width="1887" height="1177" />
+    </state>
+    <state x="-1376" y="408" key="#xdebugger.evaluate/-1920.23.1920.1057/0.23.1885.1177@-1920.23.1920.1057" timestamp="1625398763673" />
+    <state x="941" y="501" key="#xdebugger.evaluate/-1920.23.1920.1057/0.23.1885.1177@0.23.1885.1177" timestamp="1625221747245" />
+    <state x="905" y="563" key="#xdebugger.evaluate/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626852854139" />
+    <state x="999" y="501" key="#xdebugger.evaluate/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1623303818728" />
+    <state x="1349" y="172" key="#xdebugger.evaluate/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618039500222" />
+    <state x="571" y="215" width="945" height="554" key="#xdebugger.evaluate/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618209283975" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1626777980158">
+      <screen x="0" y="23" width="1887" height="1177" />
+    </state>
+    <state width="254" height="195" key="DatabaseViewActions_Filter/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626777980158" />
+    <state width="851" height="519" key="DebuggerActiveHint" timestamp="1617780030706">
+      <screen x="0" y="23" width="1889" height="1177" />
+    </state>
+    <state width="851" height="519" key="DebuggerActiveHint/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1617780030706" />
+    <state x="90" y="137" width="1683" height="977" key="DiffContextDialog" timestamp="1622448395658">
+      <screen x="0" y="23" width="1886" height="1177" />
+    </state>
+    <state x="90" y="137" width="1683" height="977" key="DiffContextDialog/-1920.23.1920.1057/0.23.1886.1177@0.23.1886.1177" timestamp="1622448395658" />
+    <state x="955" y="369" key="EnvironmentVariablesDialog" timestamp="1618475199424">
+      <screen x="0" y="23" width="1889" height="1177" />
+    </state>
+    <state x="955" y="369" key="EnvironmentVariablesDialog/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618475199424" />
+    <state width="1839" height="442" key="GridCell.Tab.0.bottom" timestamp="1627382366478">
+      <screen x="0" y="23" width="1885" height="1177" />
+    </state>
+    <state width="1841" height="559" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1880.1177@-1920.23.1920.1057" timestamp="1625284222289" />
+    <state width="1268" height="396" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1882.1177@-1920.23.1920.1057" timestamp="1625284694335" />
+    <state width="1839" height="391" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1883.1177@0.23.1883.1177" timestamp="1627210508945" />
+    <state width="1839" height="315" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1884.1177@0.23.1884.1177" timestamp="1627114652985" />
+    <state width="1435" height="221" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1885.1177@-1920.23.1920.1057" timestamp="1625639009028" />
+    <state width="1839" height="442" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1885.1177@0.23.1885.1177" timestamp="1627382366478" />
+    <state width="1839" height="442" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1886.1177@0.23.1886.1177" timestamp="1627373665644" />
+    <state width="1839" height="397" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626955087178" />
+    <state width="1841" height="444" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1624938518617" />
+    <state width="1841" height="374" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618195722146" />
+    <state width="1405" height="2" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1626938334189" />
+    <state width="1841" height="161" key="GridCell.Tab.0.bottom/-1920.88.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1620883736927" />
+    <state width="1878" height="255" key="GridCell.Tab.0.bottom/-1920.88.1920.1057/0.23.1889.1177@-1920.88.1920.1057" timestamp="1620108611767" />
+    <state width="1841" height="413" key="GridCell.Tab.0.bottom/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1620888243837" />
+    <state width="1841" height="285" key="GridCell.Tab.0.bottom/-1920.88.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1619598400084" />
+    <state width="1841" height="483" key="GridCell.Tab.0.bottom/-1920.88.1920.1057/0.23.1891.1177@0.23.1891.1177" timestamp="1619580476556" />
+    <state width="1841" height="375" key="GridCell.Tab.0.bottom/0.23.1887.1057@0.23.1887.1057" timestamp="1618195862696" />
+    <state width="1839" height="442" key="GridCell.Tab.0.center" timestamp="1627382366477">
+      <screen x="0" y="23" width="1885" height="1177" />
+    </state>
+    <state width="1841" height="559" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1880.1177@-1920.23.1920.1057" timestamp="1625284222288" />
+    <state width="1268" height="396" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1882.1177@-1920.23.1920.1057" timestamp="1625284694334" />
+    <state width="1839" height="391" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1883.1177@0.23.1883.1177" timestamp="1627210508944" />
+    <state width="1815" height="278" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1884.1177@-1920.23.1920.1057" timestamp="1625557748013" />
+    <state width="1839" height="315" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1884.1177@0.23.1884.1177" timestamp="1627114652984" />
+    <state width="1435" height="221" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1885.1177@-1920.23.1920.1057" timestamp="1625639009027" />
+    <state width="1839" height="442" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1885.1177@0.23.1885.1177" timestamp="1627382366477" />
+    <state width="1839" height="442" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1886.1177@0.23.1886.1177" timestamp="1627373665644" />
+    <state width="1839" height="397" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626955087177" />
+    <state width="1841" height="444" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1624938518616" />
+    <state width="1841" height="374" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618195722145" />
+    <state width="1405" height="2" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1626938334186" />
+    <state width="1841" height="161" key="GridCell.Tab.0.center/-1920.88.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1620883736926" />
+    <state width="1878" height="255" key="GridCell.Tab.0.center/-1920.88.1920.1057/0.23.1889.1177@-1920.88.1920.1057" timestamp="1620108611765" />
+    <state width="1841" height="413" key="GridCell.Tab.0.center/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1620888243836" />
+    <state width="1841" height="285" key="GridCell.Tab.0.center/-1920.88.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1619598400084" />
+    <state width="1841" height="483" key="GridCell.Tab.0.center/-1920.88.1920.1057/0.23.1891.1177@0.23.1891.1177" timestamp="1619580476555" />
+    <state width="1841" height="375" key="GridCell.Tab.0.center/0.23.1887.1057@0.23.1887.1057" timestamp="1618195862695" />
+    <state width="1839" height="442" key="GridCell.Tab.0.left" timestamp="1627382366477">
+      <screen x="0" y="23" width="1885" height="1177" />
+    </state>
+    <state width="1841" height="559" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1880.1177@-1920.23.1920.1057" timestamp="1625284222287" />
+    <state width="1268" height="396" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1882.1177@-1920.23.1920.1057" timestamp="1625284694332" />
+    <state width="1839" height="391" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1883.1177@0.23.1883.1177" timestamp="1627210508944" />
+    <state width="1839" height="315" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1884.1177@0.23.1884.1177" timestamp="1627114652983" />
+    <state width="1435" height="221" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1885.1177@-1920.23.1920.1057" timestamp="1625639009026" />
+    <state width="1839" height="442" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1885.1177@0.23.1885.1177" timestamp="1627382366477" />
+    <state width="1839" height="442" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1886.1177@0.23.1886.1177" timestamp="1627373665643" />
+    <state width="1839" height="397" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626955087177" />
+    <state width="1841" height="444" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1624938518615" />
+    <state width="1841" height="374" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618195722140" />
+    <state width="1405" height="2" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1626938334180" />
+    <state width="1841" height="161" key="GridCell.Tab.0.left/-1920.88.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1620883736926" />
+    <state width="1878" height="255" key="GridCell.Tab.0.left/-1920.88.1920.1057/0.23.1889.1177@-1920.88.1920.1057" timestamp="1620108611764" />
+    <state width="1841" height="413" key="GridCell.Tab.0.left/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1620888243836" />
+    <state width="1841" height="285" key="GridCell.Tab.0.left/-1920.88.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1619598400083" />
+    <state width="1841" height="483" key="GridCell.Tab.0.left/-1920.88.1920.1057/0.23.1891.1177@0.23.1891.1177" timestamp="1619580476554" />
+    <state width="1841" height="375" key="GridCell.Tab.0.left/0.23.1887.1057@0.23.1887.1057" timestamp="1618195862694" />
+    <state width="1839" height="442" key="GridCell.Tab.0.right" timestamp="1627382366478">
+      <screen x="0" y="23" width="1885" height="1177" />
+    </state>
+    <state width="1841" height="559" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1880.1177@-1920.23.1920.1057" timestamp="1625284222288" />
+    <state width="1268" height="396" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1882.1177@-1920.23.1920.1057" timestamp="1625284694334" />
+    <state width="1839" height="391" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1883.1177@0.23.1883.1177" timestamp="1627210508945" />
+    <state width="1839" height="315" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1884.1177@0.23.1884.1177" timestamp="1627114652984" />
+    <state width="1435" height="221" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1885.1177@-1920.23.1920.1057" timestamp="1625639009027" />
+    <state width="1839" height="442" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1885.1177@0.23.1885.1177" timestamp="1627382366478" />
+    <state width="1839" height="442" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1886.1177@0.23.1886.1177" timestamp="1627373665644" />
+    <state width="1839" height="397" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626955087178" />
+    <state width="1841" height="444" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1624938518616" />
+    <state width="1841" height="374" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618195722146" />
+    <state width="1405" height="2" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1626938334189" />
+    <state width="1841" height="161" key="GridCell.Tab.0.right/-1920.88.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1620883736927" />
+    <state width="1878" height="255" key="GridCell.Tab.0.right/-1920.88.1920.1057/0.23.1889.1177@-1920.88.1920.1057" timestamp="1620108611766" />
+    <state width="1841" height="413" key="GridCell.Tab.0.right/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1620888243837" />
+    <state width="1841" height="285" key="GridCell.Tab.0.right/-1920.88.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1619598400084" />
+    <state width="1841" height="483" key="GridCell.Tab.0.right/-1920.88.1920.1057/0.23.1891.1177@0.23.1891.1177" timestamp="1619580476555" />
+    <state width="1841" height="375" key="GridCell.Tab.0.right/0.23.1887.1057@0.23.1887.1057" timestamp="1618195862695" />
+    <state width="1839" height="442" key="GridCell.Tab.1.bottom" timestamp="1627382366479">
+      <screen x="0" y="23" width="1885" height="1177" />
+    </state>
+    <state width="1841" height="394" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1880.1177@-1920.23.1920.1057" timestamp="1625284222279" />
+    <state width="1839" height="391" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1883.1177@0.23.1883.1177" timestamp="1627210508845" />
+    <state width="1839" height="315" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1884.1177@0.23.1884.1177" timestamp="1627114649625" />
+    <state width="1878" height="337" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1885.1177@-1920.23.1920.1057" timestamp="1625398645744" />
+    <state width="1839" height="442" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1885.1177@0.23.1885.1177" timestamp="1627382366479" />
+    <state width="1839" height="442" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1886.1177@0.23.1886.1177" timestamp="1627373665506" />
+    <state width="1839" height="397" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626955087269" />
+    <state width="1841" height="444" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1624938510214" />
+    <state width="1841" height="374" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618194750019" />
+    <state width="1839" height="394" key="GridCell.Tab.1.bottom/-1920.23.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1626932693093" />
+    <state width="1841" height="161" key="GridCell.Tab.1.bottom/-1920.88.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1620883767033" />
+    <state width="1878" height="255" key="GridCell.Tab.1.bottom/-1920.88.1920.1057/0.23.1889.1177@-1920.88.1920.1057" timestamp="1620108547027" />
+    <state width="1841" height="413" key="GridCell.Tab.1.bottom/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1620888243723" />
+    <state width="1841" height="285" key="GridCell.Tab.1.bottom/-1920.88.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1619598399974" />
+    <state width="1841" height="483" key="GridCell.Tab.1.bottom/-1920.88.1920.1057/0.23.1891.1177@0.23.1891.1177" timestamp="1619580476428" />
+    <state width="1841" height="375" key="GridCell.Tab.1.bottom/0.23.1887.1057@0.23.1887.1057" timestamp="1618195862697" />
+    <state width="1839" height="442" key="GridCell.Tab.1.center" timestamp="1627382366479">
+      <screen x="0" y="23" width="1885" height="1177" />
+    </state>
+    <state width="1841" height="394" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1880.1177@-1920.23.1920.1057" timestamp="1625284222277" />
+    <state width="1839" height="391" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1883.1177@0.23.1883.1177" timestamp="1627210508844" />
+    <state width="1839" height="315" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1884.1177@0.23.1884.1177" timestamp="1627114649624" />
+    <state width="1878" height="337" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1885.1177@-1920.23.1920.1057" timestamp="1625398645743" />
+    <state width="1839" height="442" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1885.1177@0.23.1885.1177" timestamp="1627382366479" />
+    <state width="1839" height="442" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1886.1177@0.23.1886.1177" timestamp="1627373665505" />
+    <state width="1839" height="397" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626955087268" />
+    <state width="1841" height="444" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1624938510212" />
+    <state width="1841" height="374" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618194750018" />
+    <state width="1839" height="394" key="GridCell.Tab.1.center/-1920.23.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1626932693092" />
+    <state width="1841" height="161" key="GridCell.Tab.1.center/-1920.88.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1620883767032" />
+    <state width="1878" height="255" key="GridCell.Tab.1.center/-1920.88.1920.1057/0.23.1889.1177@-1920.88.1920.1057" timestamp="1620108547026" />
+    <state width="1841" height="413" key="GridCell.Tab.1.center/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1620888243722" />
+    <state width="1841" height="285" key="GridCell.Tab.1.center/-1920.88.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1619598399973" />
+    <state width="1841" height="483" key="GridCell.Tab.1.center/-1920.88.1920.1057/0.23.1891.1177@0.23.1891.1177" timestamp="1619580476426" />
+    <state width="1841" height="375" key="GridCell.Tab.1.center/0.23.1887.1057@0.23.1887.1057" timestamp="1618195862697" />
+    <state width="1839" height="442" key="GridCell.Tab.1.left" timestamp="1627382366478">
+      <screen x="0" y="23" width="1885" height="1177" />
+    </state>
+    <state width="1841" height="394" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1880.1177@-1920.23.1920.1057" timestamp="1625284222276" />
+    <state width="1839" height="391" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1883.1177@0.23.1883.1177" timestamp="1627210508844" />
+    <state width="1839" height="315" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1884.1177@0.23.1884.1177" timestamp="1627114649624" />
+    <state width="1878" height="337" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1885.1177@-1920.23.1920.1057" timestamp="1625398645742" />
+    <state width="1839" height="442" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1885.1177@0.23.1885.1177" timestamp="1627382366478" />
+    <state width="1839" height="442" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1886.1177@0.23.1886.1177" timestamp="1627373665505" />
+    <state width="1839" height="397" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626955087267" />
+    <state width="1841" height="444" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1624938510212" />
+    <state width="1841" height="374" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618194750017" />
+    <state width="1839" height="394" key="GridCell.Tab.1.left/-1920.23.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1626932693092" />
+    <state width="1841" height="161" key="GridCell.Tab.1.left/-1920.88.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1620883767031" />
+    <state width="1878" height="255" key="GridCell.Tab.1.left/-1920.88.1920.1057/0.23.1889.1177@-1920.88.1920.1057" timestamp="1620108547025" />
+    <state width="1841" height="413" key="GridCell.Tab.1.left/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1620888243721" />
+    <state width="1841" height="285" key="GridCell.Tab.1.left/-1920.88.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1619598399973" />
+    <state width="1841" height="483" key="GridCell.Tab.1.left/-1920.88.1920.1057/0.23.1891.1177@0.23.1891.1177" timestamp="1619580476425" />
+    <state width="1841" height="375" key="GridCell.Tab.1.left/0.23.1887.1057@0.23.1887.1057" timestamp="1618195862696" />
+    <state width="1839" height="442" key="GridCell.Tab.1.right" timestamp="1627382366479">
+      <screen x="0" y="23" width="1885" height="1177" />
+    </state>
+    <state width="1841" height="394" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1880.1177@-1920.23.1920.1057" timestamp="1625284222278" />
+    <state width="1839" height="391" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1883.1177@0.23.1883.1177" timestamp="1627210508845" />
+    <state width="1839" height="315" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1884.1177@0.23.1884.1177" timestamp="1627114649625" />
+    <state width="1878" height="337" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1885.1177@-1920.23.1920.1057" timestamp="1625398645743" />
+    <state width="1839" height="442" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1885.1177@0.23.1885.1177" timestamp="1627382366479" />
+    <state width="1839" height="442" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1886.1177@0.23.1886.1177" timestamp="1627373665506" />
+    <state width="1839" height="397" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626955087269" />
+    <state width="1841" height="444" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1624938510213" />
+    <state width="1841" height="374" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618194750018" />
+    <state width="1839" height="394" key="GridCell.Tab.1.right/-1920.23.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1626932693092" />
+    <state width="1841" height="161" key="GridCell.Tab.1.right/-1920.88.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1620883767032" />
+    <state width="1878" height="255" key="GridCell.Tab.1.right/-1920.88.1920.1057/0.23.1889.1177@-1920.88.1920.1057" timestamp="1620108547026" />
+    <state width="1841" height="413" key="GridCell.Tab.1.right/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1620888243722" />
+    <state width="1841" height="285" key="GridCell.Tab.1.right/-1920.88.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1619598399974" />
+    <state width="1841" height="483" key="GridCell.Tab.1.right/-1920.88.1920.1057/0.23.1891.1177@0.23.1891.1177" timestamp="1619580476427" />
+    <state width="1841" height="375" key="GridCell.Tab.1.right/0.23.1887.1057@0.23.1887.1057" timestamp="1618195862697" />
+    <state width="247" height="457" key="HiddenNamespacesPopup" timestamp="1624867698416">
+      <screen x="0" y="23" width="1888" height="1177" />
+    </state>
+    <state width="247" height="457" key="HiddenNamespacesPopup/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1624867698416" />
+    <state x="761" y="220" key="SettingsEditor" timestamp="1627373723245">
+      <screen x="0" y="23" width="1886" height="1177" />
+    </state>
+    <state x="761" y="220" key="SettingsEditor/-1920.23.1920.1057/0.23.1886.1177@0.23.1886.1177" timestamp="1627373723245" />
+    <state x="761" y="220" key="SettingsEditor/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626766430519" />
+    <state x="638" y="271" key="SettingsEditor/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1617951481860" />
+    <state x="762" y="220" key="SettingsEditor/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1618475211292" />
+    <state x="762" y="220" key="SettingsEditor/-1920.88.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1619597657629" />
+    <state width="602" height="589" key="XDebugger.FullValuePopup" timestamp="1625221713330">
+      <screen x="0" y="23" width="1885" height="1177" />
+    </state>
+    <state width="602" height="589" key="XDebugger.FullValuePopup/-1920.23.1920.1057/0.23.1885.1177@0.23.1885.1177" timestamp="1625221713330" />
+    <state width="602" height="589" key="XDebugger.FullValuePopup/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1624879711477" />
+    <state width="602" height="589" key="XDebugger.FullValuePopup/-1920.88.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1619483259957" />
+    <state width="602" height="589" key="XDebugger.FullValuePopup/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1620183203095" />
+    <state width="602" height="589" key="XDebugger.FullValuePopup/-1920.88.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1619597509920" />
+    <state x="842" y="506" width="346" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1620385688029">
+      <screen x="0" y="23" width="1889" height="1177" />
+    </state>
+    <state x="842" y="506" width="346" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1620385688029" />
+    <state x="-1371" y="213" key="com.intellij.database.dbimport.ImportDialog" timestamp="1625557595150">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-1371" y="213" key="com.intellij.database.dbimport.ImportDialog/-1920.23.1920.1057/0.23.1884.1177@-1920.23.1920.1057" timestamp="1625557595150" />
+    <state x="687" y="402" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1626777968027">
+      <screen x="0" y="23" width="1887" height="1177" />
+    </state>
+    <state x="-1221" y="363" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/-1920.23.1920.1057/0.23.1884.1177@-1920.23.1920.1057" timestamp="1625557597286" />
+    <state x="687" y="402" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626777968027" />
+    <state x="877" y="561" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1626766433749">
+      <screen x="0" y="23" width="1887" height="1177" />
+    </state>
+    <state x="877" y="561" key="com.intellij.database.run.ParametersPanel.Standalone/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626766433749" />
+    <state x="-1214" y="296" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1625398727082">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-1214" y="296" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-1920.23.1920.1057/0.23.1885.1177@-1920.23.1920.1057" timestamp="1625398727082" />
+    <state x="430" y="323" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1626767130595">
+      <screen x="0" y="23" width="1887" height="1177" />
+    </state>
+    <state x="430" y="323" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626767130595" />
+    <state x="728" y="532" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626765873347">
+      <screen x="0" y="23" width="1887" height="1177" />
+    </state>
+    <state x="728" y="532" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626765873347" />
+    <state x="766" y="324" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1623304143389">
+      <screen x="0" y="23" width="1888" height="1177" />
+    </state>
+    <state x="766" y="324" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1623304143389" />
+    <state x="429" y="209" width="1150" height="547" key="find.popup" timestamp="1626850683249">
+      <screen x="0" y="23" width="1887" height="1177" />
+    </state>
+    <state x="566" y="362" width="1150" height="547" key="find.popup/-1920.23.1920.1057/0.23.1885.1177@0.23.1885.1177" timestamp="1626330060718" />
+    <state x="429" y="209" width="1149" height="547" key="find.popup/-1920.23.1920.1057/0.23.1886.1177@0.23.1886.1177" timestamp="1626343701143" />
+    <state x="429" y="209" width="1150" height="547" key="find.popup/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626850683249" />
+    <state x="567" y="362" width="1151" height="547" key="find.popup/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1624880610344" />
+    <state x="827" y="265" width="699" height="547" key="find.popup/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1617781822138" />
+    <state x="826" y="265" width="699" height="547" key="find.popup/-1920.88.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1619505697864" />
+    <state x="827" y="265" width="700" height="547" key="find.popup/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1620815818407" />
+    <state x="827" y="265" width="700" height="547" key="find.popup/-1920.88.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1618795547064" />
+    <state x="957" y="284" width="670" height="753" key="search.everywhere.popup" timestamp="1627373439093">
+      <screen x="0" y="23" width="1886" height="1177" />
+    </state>
+    <state x="956" y="284" width="670" height="753" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1884.1177@0.23.1884.1177" timestamp="1624950039022" />
+    <state x="957" y="284" width="671" height="753" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1885.1177@0.23.1885.1177" timestamp="1627281905848" />
+    <state x="957" y="284" width="670" height="753" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1886.1177@0.23.1886.1177" timestamp="1627373439093" />
+    <state x="958" y="284" width="672" height="753" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1626767184527" />
+    <state x="958" y="284" width="671" height="753" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1622546497888" />
+    <state x="959" y="284" width="672" height="753" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1617950538152" />
+    <state x="957" y="284" width="673" height="753" key="search.everywhere.popup/-1920.88.1920.1057/0.23.1887.1177@0.23.1887.1177" timestamp="1619503573589" />
+    <state x="958" y="284" width="674" height="753" key="search.everywhere.popup/-1920.88.1920.1057/0.23.1889.1177@0.23.1889.1177" timestamp="1620539828051" />
+    <state x="959" y="284" width="674" height="753" key="search.everywhere.popup/-1920.88.1920.1057/0.23.1890.1177@0.23.1890.1177" timestamp="1619589323839" />
+    <state x="960" y="284" width="674" height="753" key="search.everywhere.popup/-1920.88.1920.1057/0.23.1891.1177@0.23.1891.1177" timestamp="1618817286306" />
+    <state x="713" y="522" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1622893728849">
+      <screen x="0" y="23" width="1888" height="1177" />
+    </state>
+    <state x="713" y="522" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/-1920.23.1920.1057/0.23.1888.1177@0.23.1888.1177" timestamp="1622893728849" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/demo41_web/demo1-mysql/dataUtils/user_utils.go</url>
+          <line>102</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/demo41_web/demo1-mysql/dataUtils/user_utils.go</url>
+          <line>99</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="javascript-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

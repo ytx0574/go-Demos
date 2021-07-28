@@ -25,6 +25,7 @@ go 封装 继承 多态
 		   比如下面的model.Pupil.Books如果不先初始化, 那么model.Pupil.age也无法使用. 运行时错误
 		2. 默认的fmt.Print打印的内容会包含指针型匿名结构体的内容和其他基本数据结构内容. 其他有名指针型数据结构不会打印
 		   比如下面的model.Pupil.Books会被直接打印出来, 而Extra和OtherBook和Height只会打印地址
+3. 多态. 参考demo21_interface
 */
 
 func main() {

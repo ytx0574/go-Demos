@@ -162,6 +162,8 @@ func main () {
 	//defer
 	var sum7 int = printNumber(10)
 	fmt.Printf("num7 = %v \n", sum7)
+
 }
+
 
 var ConstValue = numOfSum(11, 22, 1011)

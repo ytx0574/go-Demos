@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="docker mysql" uuid="c5439e1e-eb78-4c1c-9236-50b2a3889b9f">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="centos-test@192.168.5.7" uuid="25967e9a-46e2-44aa-90ea-952d62a69d99">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://192.168.5.7:3306/test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="test-session2@192.168.5.7" uuid="b15a82f3-1a50-4e39-894b-a36c7e18ad3b">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://192.168.5.7:3306/test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="docker-test@192.168.5.8" uuid="40b259cc-aba4-455b-b875-f6906038ea8d">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://192.168.5.8:3306/master_11</jdbc-url>
+    </data-source>
+  </component>
+</project>

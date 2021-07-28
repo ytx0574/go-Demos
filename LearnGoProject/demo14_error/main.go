@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"runtime/debug"
+	"time"
 )
 
 //go 错误处理  go不支持传统的 try...catch...finally
@@ -23,7 +24,6 @@ func test(num int) (value int) {
 	if num == 0 {
 		 err := errors.New("除数不能为0")
 		 panic(err)  //当除数为0时, 主动抛出异常.  即使这里不处理, 系统遇到除数为0也会抛出异常
-		 panic("fdsf: ss")  //panic可返回任意类型
 	}
 
 	value = 1 / num
@@ -31,9 +31,59 @@ func test(num int) (value int) {
 	return
 }
 
+type INT int
+
+func (this INT)Error() string {
+return ""
+}
+
 func main() {
 
+	defer func() {
+		if err := recover(); err != nil {
+			fmt.Printf("获取拦截到崩溃, 无限重启我自己 %v\n", err)
+			time.Sleep(time.Second * 3)
+			main()
+		}
+	}()
+
 	fmt.Printf("test执行之前\n")
-	test(0)
+	test(1)
 	fmt.Printf("test执行之前\n")
+
+
+	//todo go中nil的特殊使用  有时会有条件 (nil != nil) 成立;
+	//todo 此处虽然in指向了aa, aa的值为nil, 但是这是in并不是真的nil, 它指向的类型为*int, 值为nil
+	var aa *int
+	var in interface{}
+
+	in = aa
+
+	if in != nil {
+		fmt.Printf("注意:  此时in指向的值虽然是nil, 但指向对象类型为*int, 所以它不是真的nil  \"in = %+v, aa = %s\"\n", in, aa)
+	}
+
+	var INT1 *INT
+	var in1 error
+
+	in1 = INT1
+
+	if in1 != nil {
+		fmt.Printf("此处一样不等于nil\n")
+	}
+
+	t := TEST(Test)
+	t.Test("1", 1)
+}
+
+type TEST func(a string, b int)
+
+func (t TEST)Test(a string, b int) {
+	fmt.Printf("TEST Type func \n")
+	t(a, b)
+}
+
+func Test(a string, b int) {
+	fmt.Printf("Test func \n")
+	panic("我崩溃了....")
 }

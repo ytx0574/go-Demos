@@ -18,6 +18,6 @@ func main () {
 	utils_demo6.Print_string_replaced()
 	ioPackage.Printf("%v", utils_demo6.ConstString2)
 
-	//utils.Print_string()
-	//fmt.Printf("j_utils.ConstString = %v\n", utils.ConstString)
+	//demo1-mysql.Print_string()
+	//fmt.Printf("j_utils.ConstString = %v\n", demo1-mysql.ConstString)
 }

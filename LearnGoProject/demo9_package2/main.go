@@ -9,7 +9,7 @@ import (
 go 给导入的包起别名, 使用时只能用别名调用
 */
 func init () {
-	ioPackage.Printf("demo9_package2 main init()\n")
+	ioPackage.Printf("demo9_package2 demo1-mysql init()\n")
 }
 
 func main () {

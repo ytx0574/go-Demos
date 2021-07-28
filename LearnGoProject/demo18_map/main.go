@@ -35,8 +35,8 @@ func main() {
 		1:"111",
 		2: "222",   //换行初始化时, 必须补逗号
 	}
-	fmt.Println(map3, map4)
-	var num  = 10
+	fmt.Println("map3 = ", map3, "map4 = ", map4)
+	var num  = 11
 	for i := 0; i < num; i++ {
 		map2[i] = strconv.Itoa(i * 10000)
 	}

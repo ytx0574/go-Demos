@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link type="text/css" rel="stylesheet" href="/static/css/style.css">
+    <style type="text/css">
+        h1 {
+            text-align: center;
+            margin-top: 200px;
+        }
+    </style>
+    <script src="/static/script/jquery-1.7.2.js"></script>
+    <script>
+
+        $(function () {
+
+            $(".emptyCart").click(function () {
+                return confirm("亲, 三思啊, 确认清空购物车吗?")
+            })
+
+            $(".delCartItem").click(function () {
+                return confirm("确认从购物车移除吗?")
+            })
+
+            $(".updateCartItem").change(function () {
+
+                var id = $(this).attr("id")
+                var count = $(this).val()
+                $.post("/updateCartItemCount", {"id": id, "count": count}, function (res) {
+                    if (res.code == 0) {
+
+                        $("#totalCount").text(res.info.totalCount)
+                        $("#totalAmount").text(res.info.totalAmount)
+                        $("#" + id + "TAG").text(res.info.amount)
+
+                        console.log(res.info)
+                    } else {
+                        alert(res.message)
+                    }
+                    // var msg = res["message"]
+                    // var code = res["code"]
+                    // if (code == 0) {
+                    //     $("#totalCount").text(res["info"]["totalCount"])
+                    //     $("#totalAmount").text(res["info"]["totalAmount"])
+                    //     $("#" + id + "TAG").text(res["info"]["amount"])
+                    //     console.log(res["info"]["amount"])
+                    // } else if (code == 1002) {
+                    //     alert(msg)
+                    // }
+                }, "json")
+
+            })
+        })
+
+    </script>
+</head>
+<body>
+
+<div id="header">
+    <img class="logo_img" alt="" src="/static/img/logo.gif">
+    <span class="wel_word">购物车</span>
+    <div>
+        <span>欢迎<span class="um_span">韩总</span>光临尚硅谷书城</span>
+        <a href="/getMyOrders">我的订单</a>
+
+        {{template "LoginOutAndBack"}}
+    </div>
+</div>
+
+<div id="main">
+    {{if .Cart}}
+        <table>
+            <tr>
+                <td>商品名称</td>
+                <td>数量</td>
+                <td>单价</td>
+                <td>金额</td>
+                <td>操作</td>
+            </tr>
+            {{range .Cart.CartItems}}
+                <tr>
+                    <td>{{.Book.Title}}</td>
+                    <td><input id="{{.Id}}" class="updateCartItem" type="number" value="{{.Count}}"></td>
+
+                    <td>{{.Book.Price}}</td>
+                    <td id="{{.Id}}TAG">{{.Amount}}</td>
+                    <td><a class="delCartItem" href="/delCartItem?id={{.Id}}">删除</a></td>
+                </tr>
+            {{end}}
+        </table>
+
+        <br>
+        <div id="page_nav">
+            {{if .HasPrev}}
+                <a href="/getPageUserCartItems">首页</a>
+                <a href="/getPageUserCartItems?pageNo={{.PrevPageNo}}">上一页</a>
+            {{end}}
+
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+
+            当前是第{{.PageNo}}页 共{{.TotalPageNo}}页 {{.TotalRecord}}条数据
+
+            {{if .HasNext}}
+                <a href="/getPageUserCartItems?pageNo={{.NextPageNo}}">下一页</a>
+                <a href="/getPageUserCartItems?pageNo={{.TotalPageNo}}">末页</a>
+            {{end}}
+
+            到第<input value="{{.PageNo}}" name="pn" id="pn_input"/>页
+            <input type="button" value="确定" id="sub_page"/>
+            <script>
+                $("#sub_page").click(function () {
+                    var pageNo = parseInt($("#pn_input").val())
+                    // var totalPage = parseInt($("#total_page").val())
+                    var totalPage = parseInt($("{{.TotalPageNo}}").val())
+
+                    if (pageNo < 1 || pageNo > totalPage) {
+                        alert("输入不正确...")
+                    } else {
+                        location = "/getPageUserCartItems?pageNo=" + pageNo
+                    }
+                })
+            </script>
+        </div>
+
+        <br>
+        <div class="cart_info">
+            <span class="cart_span">购物车中共有<span class="b_count" id="totalCount">{{.Cart.TotalCount}}</span>件商品</span>
+            <span class="cart_span">总金额<span class="b_price" id="totalAmount">{{.Cart.TotalAmount}}</span>元</span>
+            <span class="cart_span"><a href="/emptyCart" class="emptyCart">清空购物车</a></span>
+            <span class="cart_span"><a href="/checkOut">去结账</a></span>
+        </div>
+    {{else}}
+        <h1>您的购物车饥渴难耐，快去<a href="/" style="color:red">购物</a>吧！</h1>
+    {{end}}
+
+</div>
+
+<div id="bottom">
+		<span>
+			尚硅谷书城.Copyright &copy;2015
+		</span>
+</div>
+</body>
+</html>
